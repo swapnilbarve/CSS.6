@@ -1,0 +1,238 @@
+body{
+    background-image: url(./sahara.jpg);
+    background-repeat: repeat-y;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-size: 100vw;
+}
+.navbar{
+    width: 80%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li{
+    padding: 10px 40px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+}
+
+.row{
+    width: 90%;
+    display: flex;
+    color: white;
+}
+.sahara{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    padding: 30px;
+    margin: 20px;
+    justify-content: center;
+    
+}
+
+.sahara h1{
+    font-size: 80px;
+}
+
+.sahara p:nth-of-type(1){
+    margin-top: 15px;
+}
+
+.sahara p:nth-of-type(2){
+    margin-bottom: 30px;
+}
+
+.sahara button{
+    width: 200px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+.pics{
+    display: grid;
+    grid-template-columns: 270px 270px ;
+    grid-template-rows: 280px 280px;
+    grid-gap: 30px 50px;
+    padding-right:40px;
+}
+
+.row{
+    text-align: center;
+    background-size: 100%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.rom:hover{
+    transition: transform 0.7s ease-out;
+    transform: translateY(-10px);
+}
+.row1{
+    background-image: url(./sahara.jpg);
+}
+.row2{
+    background-image: url(./Bhagwat.png);
+}
+
+.row3{
+    background-image: url(./Pyramid.png);
+}
+
+.row4{
+    background-image: url(./Kalahri.png);
+}
+
+.row p{
+    line-height: 28px;
+}
+
+
+@media (max-width:856px){
+    .row{
+        width: 100%;
+        display: block;
+    }
+
+    .navbar{
+        width: 85%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 10px 10px 0px 10px;
+        margin: 10px 10px 0px 10px;
+    }
+    
+    .navbar ul{
+        display: flex;
+        list-style-type: none;
+    }
+    .navbar ul li{
+        padding: 10px 30px;
+    }
+    
+    
+    .sahara{
+        box-sizing: border-box;
+        display: inline-block;
+        flex-flow: column;
+        padding: 0px 30px;
+        margin: 0px 20px;
+        justify-content: center;
+        
+    }
+    
+    .sahara h1{
+        font-size: 30px;
+    }
+    
+    .sahara p:nth-of-type(1){
+        margin-top: 5px;
+    }
+    
+    .sahara p:nth-of-type(2){
+        margin-bottom: 20px;
+    }
+    
+    .sahara button{
+        width: 200px;
+        padding: 10px 40px;
+        border-radius: 20px;
+        border: none;
+        font-weight: bold;
+        background-color: whitesmoke;
+    }
+
+    .pics{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 550px;
+        grid-template-rows: 230px 230px 230px 230px ;
+        grid-gap: 30px 50px;
+        padding-right:0px;
+        padding-top: 20px;
+    }
+
+    .row{
+        background-position:center;
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 20px 30px;
+    }
+
+
+}
+@media  (max-width:480px) {
+
+    .navbar ul{
+        display: block;
+        list-style-type: none;
+    }
+
+    .navbar ul li{
+        padding: 5px 30px;
+    }
+
+    .content{
+        width: 100%;
+        display: block;
+    }
+
+    .sahara{
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: column;
+        padding: 0px 30px;
+        margin: 0px 20px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .pics{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 80%;
+        grid-template-rows: 200px 200px 200px 200px ;
+        grid-gap: 30px 50px;
+        padding-right:0px;
+        padding-top: 20px;
+    }
+
+    .row{
+        background-position:center;
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 20px 30px;
+    }
+}
